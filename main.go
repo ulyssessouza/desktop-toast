@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	c := toast.NewClient(50 * time.Millisecond)
+	c := toast.NewClient(time.Second)
 	err := c.SendToast(toast.NativeNotificationModel{
 		Title: "MyToastTitle",
 		Body:  "My Toast Body",
